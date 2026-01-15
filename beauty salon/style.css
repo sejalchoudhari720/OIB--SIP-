@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+header{
+    background:#ff69b4;
+    padding:15px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9");
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    color:white;
+    text-align:center;
+}
+
+.btn{
+    padding:12px 25px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+}
+
+/* Sections */
+section{
+    padding:60px;
+    text-align:center;
+}
+
+.services, .why, .contact{
+    background:#fff0f5;
+}
+
+/* Services */
+.service-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.service-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.service-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.service-card h3{
+    color:#ff69b4;
+    margin:10px 0;
+}
+
+/* Why Us */
+.why-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.why-card{
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.why-card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* About */
+.about-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text{
+    text-align:left;
+}
+
+/* Contact */
+.contact form{
+    max-width:400px;
+    margin:auto;
+}
+
+.contact input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+}
+
+.contact button{
+    width:100%;
+    padding:12px;
+    background:#ff69b4;
+    border:none;
+    color:white;
+}
+
+/* Footer */
+footer{
+    background:#ff69b4;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .about-box{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+/* Pricing Section */
+.pricing{
+    padding:60px;
+    text-align:center;
+    background:#fff;
+}
+
+.pricing-sub{
+    margin-top:10px;
+    color:#777;
+}
+
+.price-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.price-card{
+    background:#fff0f5;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.price-card h3{
+    color:#ff69b4;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:32px;
+    font-weight:bold;
+    margin:15px 0;
+    color:#333;
+}
+
+.price-card ul{
+    list-style:none;
+    margin:20px 0;
+}
+
+.price-card ul li{
+    margin:8px 0;
+}
+
+.price-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:#ff69b4;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+}
+
+.highlight{
+    border:2px solid #ff69b4;
+    transform:scale(1.05);
+}
+.hero-btn{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+}
+/* Fix anchor link hiding behind header */
+section{
+    scroll-margin-top:90px;
+}
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    scroll-margin-top:90px;
+}
